@@ -2,6 +2,19 @@
 
 임신/수유 중 의약품 안전 정보를 빠르게 조회할 수 있도록 만든 React + Vite 기반 웹 앱입니다.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/goneyak/pharmsafe)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/goneyak/pharmsafe)
+
+## 스크린샷
+
+아래 경로에 스크린샷 파일을 넣으면 README에서 바로 표시됩니다.
+
+- 권장 파일: `docs/screenshot-main.png`
+- 권장 해상도: 가로 1440px 이상
+
+![PharmSafe 메인 화면](docs/screenshot-main.png)
+
 ## 주요 기능
 
 - 의약품명/카테고리 검색
@@ -85,3 +98,67 @@ git push -u origin main
 
 - `https://github.com/<username>/pharmsafe.git`
 - `git@github.com:<username>/pharmsafe.git`
+
+## GitHub 저장소 정보 세팅 (Topics / About / 홈페이지)
+
+### 1) 웹에서 직접 설정
+
+1. 저장소 상단의 톱니바퀴 아이콘(Edit repository details) 클릭
+2. **Description(About)** 입력
+3. **Website**에 배포 URL 입력 (예: Vercel/Netlify URL)
+4. **Topics**에 태그 추가 후 저장
+
+추천 Description 예시:
+
+```text
+Medication safety lookup for pregnancy and lactation (Korean)
+```
+
+추천 Topics:
+
+```text
+pharmacy, medication-safety, pregnancy, lactation, react, vite, typescript, healthcare
+```
+
+### 2) CLI로 설정 (`gh`)
+
+```bash
+# About(설명), 홈페이지 링크 설정
+gh repo edit goneyak/pharmsafe \
+	--description "Medication safety lookup for pregnancy and lactation (Korean)" \
+	--homepage "https://<your-deploy-url>"
+
+# Topics 추가
+gh repo edit goneyak/pharmsafe \
+	--add-topic pharmacy \
+	--add-topic medication-safety \
+	--add-topic pregnancy \
+	--add-topic lactation \
+	--add-topic react \
+	--add-topic vite \
+	--add-topic typescript \
+	--add-topic healthcare
+```
+
+## 배포 가이드
+
+### Vercel
+
+1. Vercel에서 `New Project` 선택
+2. `goneyak/pharmsafe` 저장소 Import
+3. Framework preset은 `Vite` 유지
+4. Build Command: `npm run build`
+5. Output Directory: `dist`
+6. Deploy
+
+### Netlify
+
+1. Netlify에서 `Add new site` -> `Import an existing project`
+2. `goneyak/pharmsafe` 저장소 선택
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+5. Deploy
+
+## 라이선스
+
+이 프로젝트는 [MIT License](./LICENSE)를 따릅니다.
