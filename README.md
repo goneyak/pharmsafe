@@ -5,6 +5,7 @@
 - 서비스 URL: https://pharmsafe.vercel.app
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-pharmsafe.vercel.app-00C4B3?logo=vercel&logoColor=white)](https://pharmsafe.vercel.app)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/goneyak/pharmsafe)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/goneyak/pharmsafe)
 
@@ -14,6 +15,8 @@
 
 - 권장 파일: `docs/screenshot-main.png`
 - 권장 해상도: 가로 1440px 이상
+- 템플릿 파일: `docs/screenshot-main-template.svg`
+- 사용 방법: 템플릿을 Figma/Illustrator/브라우저에서 열어 내용 교체 -> PNG로 내보내기(파일명 `screenshot-main.png`)
 
 ![PharmSafe 메인 화면](docs/screenshot-main.png)
 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">PharmSafe Screenshot Template</title>
+  <desc id="desc">Template for creating docs/screenshot-main.png</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCEBF3"/>
+      <stop offset="100%" stop-color="#F8F4FF"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 56px 'Pretendard', 'Noto Sans KR', sans-serif; fill: #2B2B36; }
+      .subtitle { font: 500 26px 'Pretendard', 'Noto Sans KR', sans-serif; fill: #5A5A6B; }
+      .label { font: 600 20px 'Pretendard', 'Noto Sans KR', sans-serif; fill: #6A6A7A; }
+      .note { font: 500 18px 'Pretendard', 'Noto Sans KR', sans-serif; fill: #7A7A8A; }
+      .mono { font: 600 18px 'JetBrains Mono', monospace; fill: #3A3A45; }
+      .small { font: 500 16px 'Pretendard', 'Noto Sans KR', sans-serif; fill: #8A8A99; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1440" height="900" fill="url(#bg)"/>
+
+  <rect x="64" y="48" width="1312" height="804" rx="24" fill="#FFFFFF" stroke="#E9DDEA" stroke-width="2"/>
+
+  <rect x="64" y="48" width="1312" height="72" rx="24" fill="#F6ECF2"/>
+  <circle cx="102" cy="84" r="8" fill="#FF7A8A"/>
+  <circle cx="130" cy="84" r="8" fill="#FFC857"/>
+  <circle cx="158" cy="84" r="8" fill="#68D391"/>
+  <text x="200" y="92" class="label">PharmSafe · 임신/수유 의약품 안전정보</text>
+
+  <text x="120" y="200" class="title">메인 화면 캡처 위치</text>
+  <text x="120" y="246" class="subtitle">아래 가이드 영역에 실제 앱 화면 요소를 맞춰 배치한 뒤 PNG로 내보내세요.</text>
+
+  <rect x="120" y="290" width="1200" height="450" rx="18" fill="#FFF9FC" stroke="#E7B9D0" stroke-width="3" stroke-dasharray="14 10"/>
+  <text x="150" y="340" class="label">SAFE AREA (권장 캡처 영역)</text>
+
+  <rect x="150" y="370" width="780" height="56" rx="14" fill="#FFFFFF" stroke="#E6D8E4"/>
+  <text x="176" y="406" class="small">검색창 예시: 약 이름 또는 카테고리를 입력하세요</text>
+
+  <rect x="150" y="446" width="360" height="248" rx="16" fill="#FFFFFF" stroke="#E6D8E4"/>
+  <text x="176" y="488" class="label">카드 1</text>
+  <text x="176" y="522" class="note">- 약물명</text>
+  <text x="176" y="552" class="note">- 임신 안전도</text>
+  <text x="176" y="582" class="note">- 수유 안전도</text>
+
+  <rect x="530" y="446" width="360" height="248" rx="16" fill="#FFFFFF" stroke="#E6D8E4"/>
+  <text x="556" y="488" class="label">카드 2</text>
+  <text x="556" y="522" class="note">- 요약 정보</text>
+  <text x="556" y="552" class="note">- 아이콘/배지 정렬</text>
+
+  <rect x="910" y="446" width="380" height="248" rx="16" fill="#FFFFFF" stroke="#E6D8E4"/>
+  <text x="936" y="488" class="label">카드 3</text>
+  <text x="936" y="522" class="note">- 상세 노트</text>
+  <text x="936" y="552" class="note">- 브랜드 정보</text>
+
+  <rect x="120" y="770" width="1200" height="58" rx="12" fill="#F7F3F9"/>
+  <text x="148" y="806" class="mono">export: docs/screenshot-main.png  |  size: 1440x900  |  format: PNG</text>
+</svg>
