@@ -13,12 +13,19 @@
 
 아래 경로에 스크린샷 파일을 넣으면 README에서 바로 표시됩니다.
 
-- 권장 파일: `docs/screenshot-main.png`
+- 권장 파일 1: `docs/screenshot-main.png` (랜딩 화면)
+- 권장 파일 2: `docs/screenshot-map.png` (맵/카테고리 화면)
 - 권장 해상도: 가로 1440px 이상
 - 템플릿 파일: `docs/screenshot-main-template.svg`
 - 사용 방법: 템플릿을 Figma/Illustrator/브라우저에서 열어 내용 교체 -> PNG로 내보내기(파일명 `screenshot-main.png`)
 
-![PharmSafe 메인 화면](docs/screenshot-main.png)
+### 랜딩 화면
+
+![PharmSafe 랜딩 화면](docs/screenshot-main.png)
+
+### 카테고리 맵 화면
+
+![PharmSafe 카테고리 맵 화면](docs/screenshot-map.png)
 
 ## 주요 기능
 
