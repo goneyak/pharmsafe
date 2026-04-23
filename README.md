@@ -2,6 +2,8 @@
 
 임신/수유 중 의약품 안전 정보를 빠르게 조회할 수 있도록 만든 React + Vite 기반 웹 앱입니다.
 
+- 서비스 URL: https://pharmsafe.vercel.app
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/goneyak/pharmsafe)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/goneyak/pharmsafe)
@@ -126,7 +128,7 @@ pharmacy, medication-safety, pregnancy, lactation, react, vite, typescript, heal
 # About(설명), 홈페이지 링크 설정
 gh repo edit goneyak/pharmsafe \
 	--description "Medication safety lookup for pregnancy and lactation (Korean)" \
-	--homepage "https://<your-deploy-url>"
+	--homepage "https://pharmsafe.vercel.app"
 
 # Topics 추가
 gh repo edit goneyak/pharmsafe \
