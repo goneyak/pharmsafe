@@ -51,6 +51,7 @@ import {
   Network
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 
 type SafetyLevel = 'safe' | 'caution' | 'avoid';
 type Mode = 'landing' | 'pregnancy' | 'lactation';
@@ -3247,6 +3248,7 @@ export default function App() {
           </footer>
         )}
       </main>
+      <Analytics />
     </div>
   );
 }
