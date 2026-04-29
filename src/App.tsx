@@ -730,7 +730,7 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '2차 치료제. 삼투성 완하제 성분들은 전신 흡수가 되지 않아 기형 위험이 없으며 장기 복용에도 비교적 안전합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 사용 가능.',
-    brands: '듀파락, 폴락스, 이지엔6 등',
+    brands: '듀파락, 폴락스 등',
   },
   {
     id: '5-5',
