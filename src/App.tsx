@@ -1,6 +1,6 @@
 /**
  * @license
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: MIT
  */
 
 import { useState, useMemo } from 'react';
@@ -2725,9 +2725,9 @@ export default function App() {
 
   const getSafetyLabel = (level: SafetyLevel) => {
     switch (level) {
-      case 'safe': return '안전';
-      case 'caution': return '주의/상담';
-      case 'avoid': return '금기/회피';
+      case 'safe': return '우선 고려';
+      case 'caution': return '신중 사용';
+      case 'avoid': return '회피 권고';
     }
   };
 
@@ -2765,6 +2765,26 @@ export default function App() {
       </header>
 
       <main className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <section className="pt-6">
+          <div className="rounded-3xl border border-amber-200 bg-amber-50 px-5 py-4 text-left shadow-sm">
+            <div className="flex items-start gap-3">
+              <div className="mt-0.5 rounded-xl bg-amber-100 p-2 text-amber-700">
+                <AlertTriangle size={18} />
+              </div>
+              <div className="space-y-1">
+                <p className="text-sm font-black tracking-tight text-amber-900">
+                  Professional reference only
+                </p>
+                <p className="text-sm font-medium leading-relaxed text-amber-800">
+                  본 도구는 약사의 전문적 판단을 보조하기 위한 참고 자료입니다. 임신 주수, 수유 상태,
+                  용량, 투여경로, 기저질환에 따라 판단이 달라질 수 있으며 실제 복약 및 처방 결정은
+                  반드시 의료전문가 상담을 통해 이루어져야 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <AnimatePresence mode="wait">
           {mode === 'landing' ? (
             <motion.div
@@ -2778,7 +2798,10 @@ export default function App() {
                 <h2 className="text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tighter">
                   누구를 위한 <br /><span className="text-blue-600">상담인가요?</span>
                 </h2>
-                <p className="text-slate-500 text-xl font-medium max-w-sm mx-auto">대상자를 선택하면 해당 기준에 최적화된 안전성 가이드를 제공합니다.</p>
+                <p className="text-slate-500 text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+                  MFDS 2025 전문가용 자료를 약국 상담 흐름에 맞게 재구성한 quick-reference MVP입니다.
+                  현재는 임부 상담 범위를 우선 제공하며, 수유부 데이터는 별도 검증 후 확장 중입니다.
+                </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-4xl px-4">
@@ -2805,6 +2828,9 @@ export default function App() {
                   </div>
                   <h3 className="text-2xl font-bold text-slate-800 mb-3">수유부(Lactation)</h3>
                   <p className="text-slate-500 font-medium leading-relaxed">모유 이행성 및 <br />영아의 안전을 고려한 지침</p>
+                  <div className="mt-4 inline-flex items-center rounded-full border border-pink-200 bg-pink-50 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-pink-600">
+                    In Progress
+                  </div>
                   <div className="mt-6 flex items-center gap-1 text-pink-600 font-bold text-sm uppercase tracking-wider">
                     가이드 보기 <ChevronRight size={16} />
                   </div>
@@ -2824,8 +2850,8 @@ export default function App() {
               </div>
               <h2 className="text-3xl font-bold text-slate-800 mb-4">수유부 안전 약물 가이드</h2>
               <p className="text-lg text-slate-500 max-w-lg mb-8 leading-relaxed">
-                현재 수유부 관련 모유 이행 및 안전성에 대한 심층 데이터를 체계적으로 구축 중에 있습니다.<br/><br/>
-                조금만 기다려 주시면 더욱 정확한 정보로 찾아뵙겠습니다.
+                현재 공개 버전은 수유부 상담 데이터를 최종 검증 중입니다.<br/><br/>
+                근거 출처 정리와 표현 강도 검토가 끝난 뒤 정식 범위에 포함할 예정입니다.
               </p>
               <div className="inline-flex items-center gap-2 mb-10 px-5 py-2.5 bg-pink-50 text-pink-600 rounded-full text-sm font-bold uppercase tracking-widest border border-pink-100">
                 <SearchCode size={18} /> Coming Soon
@@ -3242,7 +3268,7 @@ export default function App() {
             </div>
             <div className="max-w-md text-center text-xs text-slate-400 font-bold leading-relaxed uppercase tracking-[0.1em]">
               © 2026 PharmSafe Guide for Pharmacists. <br />
-              본 가이드는 약사의 전문적 판단을 보조하기 위한 도구로만 사용되어야 합니다.
+              Professional reference aid only. Not a substitute for clinical judgment or official drug information sources.
             </div>
           </footer>
         )}
