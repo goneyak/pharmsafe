@@ -505,22 +505,12 @@ const MEDICATIONS: Medication[] = [
   {
     id: '5-1-2',
     category: '입덧',
-    name: '독실아민 숙신산염 + 피리독신 염산염 (Doxylamine succinate + Pyridoxine hydrochloride)',
+    name: '독실아민 숙신산염 10 mg + 피리독신 염산염 10 mg (Doxylamine succinate + Pyridoxine hydrochloride)',
     pregnancySafety: 'safe',
     pregnancyNote: '1차 치료 복합제(가장 권장됨). FDA 승인을 받은 임부 입덧 전문 치료제로 기형이나 유산 위험을 증가시키지 않습니다.',
     lactationSafety: 'avoid',
     lactationNote: '수유 중 영아 졸음 유발 가능성으로 권장되지 않음.',
     brands: '디클렉틴, 아미렉틴 등',
-  },
-  {
-    id: '5-1-6',
-    category: '입덧',
-    name: '독실아민 (Doxylamine)',
-    pregnancySafety: 'safe',
-    pregnancyNote: '항히스타민제 성분. 단일제로도 입덧 완화에 사용되며 오랫동안 사용되어 안전성이 확립되었습니다.',
-    lactationSafety: 'avoid',
-    lactationNote: '수유 중 영아 진정 작용 우려.',
-    brands: '단일제 등',
   },
   {
     id: '5-1-3',
