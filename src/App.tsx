@@ -559,17 +559,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '대표적인 제산제 성분. 전신 흡수가 적어 임신 중 속쓰림에 1차적으로 안전하게 사용 가능합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 안전.',
-    brands: '텀즈, 알마겔, 노루모 등',
-  },
-  {
-    id: '5-2-1-1',
-    category: '속쓰림',
-    name: '복합 제산제 (Complex Antacids - Norumo)',
-    pregnancySafety: 'safe',
-    pregnancyNote: '수산화마그네슘, 침강탄산칼슘 등의 성분으로 구성된 제산제입니다. 전신 흡수량이 적어 임신 중 증상 완화에 안전하게 사용 가능합니다.',
-    lactationSafety: 'safe',
-    lactationNote: '수유 중 안전.',
-    brands: '노루모, 알마겔 등',
   },
   {
     id: '5-2-13',
@@ -599,7 +588,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '위 점막을 보호하고 역류를 물리적으로 차단합니다. 임신 중 역류성 식도염 증상 완화에 안전합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 안전.',
-    brands: '개비스콘 등',
   },
   {
     id: '5-2-3',
@@ -609,7 +597,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '위점막 보호제. 전신 흡수가 거의 없어 임시 중 궤양 및 식도염 치료에 안전하게 사용됩니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 안전.',
-    brands: '아루사루민 등',
   },
   {
     id: '5-2-4',
@@ -619,7 +606,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: 'H2 수용체 길항제. 위산 분비를 억제하며 임신 중 비교적 넓은 안전성 데이터가 확보되어 있습니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 안전하게 사용 가능.',
-    brands: '가스터 등',
   },
   {
     id: '5-2-5',
@@ -629,7 +615,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: 'H2 수용체 길항제. 사용 가능하나 태아에게 항안드로겐 효과(남성호르몬 억제) 가능성이 보고된 바 있어 주의가 필요합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 비교적 안전.',
-    brands: '타가메트 등',
   },
   {
     id: '5-2-6',
@@ -639,7 +624,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '프로톤 펌프 억제제(PPIs). 기형 위험은 낮으나 고용량 투여 시 태아 성장을 방해할 수 있어 다른 제산제로 조절되지 않을 때만 신중히 사용합니다.',
     lactationSafety: 'caution',
     lactationNote: '수유 중 주의 및 상담.',
-    brands: '오메드 등',
   },
   {
     id: '5-2-7',
@@ -649,7 +633,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '최신 위산 분비 억제제. 임부에 대한 안전성 연구 데이터가 매우 부족하여 임신 중 사용을 권장하지 않습니다.',
     lactationSafety: 'avoid',
     lactationNote: '수유 중 안전성 미확립.',
-    brands: '케이캡, 펙수클루 등',
   },
   {
     id: '5-2-9',
@@ -659,7 +642,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '고나트륨 제산제. 나트륨 함량이 높아 임산부의 부종(부기)을 악화시킬 수 있으며 모체 및 태아의 전해질 불균형을 유발할 수 있습니다.',
     lactationSafety: 'caution',
     lactationNote: '수유 중 주의.',
-    brands: '일부 액상 제산제 등',
   },
   {
     id: '5-2-8',
