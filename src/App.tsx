@@ -1591,37 +1591,136 @@ const MEDICATIONS: Medication[] = [
   lactationSafety: 'caution',
   lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
 },
-
-  {
-    id: '9-8',
-    category: '백신/진균',
-    name: '클로트리마졸 / 니스타틴 국소 외용제 (Clotrimazole / Nystatin Topical)',
-    pregnancySafety: 'safe',
-    pregnancyNote: '질염/칸디다증용 국소 항진균제. 전신 흡수가 극소량이거나 없어 임신 중 가장 안전한 선택입니다.',
-    lactationSafety: 'safe',
-    lactationNote: '수유 중 안전.',
-    brands: '카네스텐 등',
-  },
-  {
-    id: '9-9',
-    category: '백신/진균',
-    name: '메트로니다졸 / 메플로퀸 / 클로로퀸 (Metronidazole / Mefloquine / Chloroquine)',
-    pregnancySafety: 'safe',
-    pregnancyNote: '항원충제 및 말라리아 치료제. 메타분석 결과 1삼분기 사용 시에도 기형 위험 증가가 관찰되지 않았습니다.',
-    lactationSafety: 'safe',
-    lactationNote: '수유 중 사용 가능.',
-    brands: '후라시닐, 라리암 등',
-  },
-  {
-    id: '9-10',
-    category: '백신/진균',
-    name: '불활성 백신 - 독감 / Tdap / 코로나 mRNA (Inactivated Influenza / Tdap / COVID-19 mRNA Vaccine)',
-    pregnancySafety: 'safe',
-    pregnancyNote: '임신 주수 상관없이 적극 권장. Tdap은 27~36주 사이 접종 시 신생아 보호 효과가 극대화됩니다.',
-    lactationSafety: 'safe',
-    lactationNote: '수유 중 매우 안전.',
-    brands: '다양함',
-  },
+{
+  id: '9-8',
+  category: '백신/진균',
+  name: '클로트리마졸 국소제 (Clotrimazole Topical)',
+  pregnancySafety: 'safe',
+  pregnancyNote:
+    '임신 중 선호되는 국소 아졸계 항진균제입니다. 동물실험에서 기형 발생 보고가 없었으며, 임신 기간 동안 사용할 수 있는 것으로 알려져 있습니다. 다만 의사의 진단 하에 사용하는 것이 권장됩니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-8-1',
+  category: '백신/진균',
+  name: '니스타틴 국소제 / 경구제 (Nystatin Topical / Oral)',
+  pregnancySafety: 'caution',
+  pregnancyNote:
+    '피부 및 점막 칸디다증에서 우선적으로 고려할 수 있는 항진균제이며, 경구 복용 시에도 전신 흡수가 거의 되지 않습니다. 다만 임신 8~14주 무분별한 사용은 자제하고, 필요한 경우에 한해 사용합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-9',
+  category: '백신/진균',
+  name: '메트로니다졸 (Metronidazole)',
+  pregnancySafety: 'caution',
+  pregnancyNote:
+    '혐기균 감염증 및 일부 원충 감염 치료에 사용됩니다. 동물실험에서 태아 독성 보고가 있으나, 메타분석에서는 임신 1삼분기 사용 시 선천 기형 증가가 확인되지 않았습니다. 적응증이 명확할 때 위해성 대비 유익성을 평가해 사용합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-9-1',
+  category: '백신/진균',
+  name: '메플로퀸 (Mefloquine)',
+  pregnancySafety: 'caution',
+  pregnancyNote:
+    '말라리아 예방약으로 임신 전 기간 사용 가능하다는 최근 지침이 있으나, 동물실험에서 고용량 투여 시 기형 및 태아 독성 보고가 있습니다. 특히 임신 1삼분기에는 위해성 대비 유익성을 고려해 사용합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-9-2',
+  category: '백신/진균',
+  name: '클로로퀸 (Chloroquine)',
+  pregnancySafety: 'caution',
+  pregnancyNote:
+    '일부 허가사항에서는 임신 중 투여를 피할 것을 권고하지만, WHO와 CDC 등 국제 가이드라인에서는 Chloroquine 감수성 삼일열 말라리아 치료에 임신 중 사용 가능한 약물로 분류하고 있습니다. 적응증이 명확한 경우 전문가 판단 하에 사용합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-10',
+  category: '백신/진균',
+  name: '불활성화 인플루엔자 백신 (Inactivated Influenza Vaccine)',
+  pregnancySafety: 'safe',
+  pregnancyNote:
+    '임부에게 적극 권장되는 대표적 백신입니다. 인플루엔자 감염 합병증 위험이 높기 때문에 임신 주수와 관계없이 접종할 수 있으며, 특히 임신 2·3삼분기의 안전성 데이터가 더 많이 축적되어 있습니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-10-1',
+  category: '백신/진균',
+  name: 'Tdap 백신 (Tetanus-Diphtheria-Pertussis Vaccine)',
+  pregnancySafety: 'safe',
+  pregnancyNote:
+    '임부에게 권장되는 백신입니다. 특히 신생아의 백일해 예방을 위해 임신 27~36주 사이 접종이 권고되며, 임신 중 접종하지 못한 경우 분만 후 신속한 접종이 권장됩니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-10-2',
+  category: '백신/진균',
+  name: '코로나19 mRNA 백신 (COVID-19 mRNA Vaccine)',
+  pregnancySafety: 'safe',
+  pregnancyNote:
+    '임부는 COVID-19 중증 진행 고위험군이므로 백신 접종이 권장됩니다. mRNA 백신은 살아있는 바이러스를 사용하지 않으며, 동물실험에서 임신, 배·태아 발달, 분만 또는 출생 후 발달과 관련한 유해 영향은 관찰되지 않았습니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-16',
+  category: '백신/진균',
+  name: '암포테리신 B (Amphotericin B)',
+  pregnancySafety: 'caution',
+  pregnancyNote:
+    '심각한 전신 진균성 감염에서 사용되는 약물입니다. 태아에 해로운 영향이 없었다는 사례들이 있으나 자료가 충분하지 않고, 태반 통과 및 신생아 혈중 검출 보고가 있어 위해성 대비 유익성이 크다고 판단되는 경우에만 투여합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-16-1',
+  category: '백신/진균',
+  name: '에키노칸딘 계열 (Echinocandins)',
+  pregnancySafety: 'avoid',
+  pregnancyNote:
+    '임신 중 적절하고 잘 통제된 연구가 없으며, 동물실험에서 태반 통과 및 태아 골격 변화 등 태아독성이 보고되었습니다. 다른 대체 치료가 없고 감염이 생명을 위협하는 경우 등 예외적 상황에서만 고려합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-21',
+  category: '백신/진균',
+  name: '경구용 플루코나졸 / 이트라코나졸 (Oral Fluconazole / Itraconazole)',
+  pregnancySafety: 'avoid',
+  pregnancyNote:
+    '전신 아졸계 항진균제는 태반을 통과하고 유산 및 선천 기형 위험을 높일 수 있어 임신 중, 특히 1삼분기에는 피해야 합니다. 고용량 장기 Fluconazole은 특정 선천 기형과 연관 보고가 있으며, Itraconazole도 동물실험에서 배아독성과 선천 기형 증가가 보고되었습니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-22',
+  category: '백신/진균',
+  name: '프리마퀸 (Primaquine)',
+  pregnancySafety: 'avoid',
+  pregnancyNote:
+    '임부 금기입니다. 태아의 G6PD 상태를 확인할 수 없고, 용혈성 빈혈 유발 위험과 동물실험에서의 유전독성·기형·배태아 손상 보고가 있어 임신 중 사용하지 않으며 재발 방지 치료는 산후로 연기합니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
+{
+  id: '9-23',
+  category: '백신/진균',
+  name: '생백신 - MMR / 수두 / 대상포진 생백신 / 비강 인플루엔자 생백신 (MMR / Varicella / Live Zoster / Live Influenza Vaccine)',
+  pregnancySafety: 'avoid',
+  pregnancyNote:
+    '모든 생백신은 백신 바이러스에 의한 태아 감염의 이론적 위험이 있어 임신 중 접종은 피해야 합니다. 가임기 여성은 생백신 접종 후 4주간 피임이 권고됩니다. 다만 임신 중 실수로 접종한 경우, 백신 접종만을 근거로 임신 중절이 권장되지는 않습니다.',
+  lactationSafety: 'caution',
+  lactationNote: '수유부 정보는 별도 검증 전까지 공개용 판단에서 보류합니다.',
+},
 
   // [신중 투여 - 상담 필수]
   {
@@ -1674,16 +1773,7 @@ const MEDICATIONS: Medication[] = [
     lactationNote: '수유 중 전문가 판단.',
     brands: '베클루리, 팍스로비드 등',
   },
-  {
-    id: '9-16',
-    category: '백신/진균',
-    name: '암포테리신 B / 에키노칸딘 (Amphotericin B / Echinocandins)',
-    pregnancySafety: 'caution',
-    pregnancyNote: '생명을 위협하는 전신 진균 감염 시에만 사용. 태반 통과 및 골격 변화 우려가 있어 정밀한 유익성 평가가 필요합니다.',
-    lactationSafety: 'avoid',
-    lactationNote: '수유 중 주의.',
-    brands: '암비솜 등',
-  },
+
 
   // [금기 및 제한 - 피해야 함]
   {
@@ -1726,36 +1816,7 @@ const MEDICATIONS: Medication[] = [
     lactationNote: '수유 중 금기.',
     brands: '페가시스 등',
   },
-  {
-    id: '9-21',
-    category: '백신/진균',
-    name: '경구용 아졸계 항진균제 (Oral Fluconazole / Itraconazole)',
-    pregnancySafety: 'avoid',
-    pregnancyNote: '❌ 경구 투여 금기. 1삼분기 고용량 노출 시 비정상적 얼굴, 심장병 등 기형 및 유산 위험이 있습니다.',
-    lactationSafety: 'avoid',
-    lactationNote: '수유 중 피해야 함.',
-    brands: '디푸루칸 등',
-  },
-  {
-    id: '9-22',
-    category: '백신/진균',
-    name: '프리마퀸 (Primaquine)',
-    pregnancySafety: 'avoid',
-    pregnancyNote: '❌ 절대 금기. 태아 용혈성 빈혈 유발 및 유전자 변이 위험으로 출산 후로 투여를 미룹니다.',
-    lactationSafety: 'avoid',
-    lactationNote: '수유 중 금기.',
-    brands: '프리마퀸 등',
-  },
-  {
-    id: '9-23',
-    category: '백신/진균',
-    name: '생백신 - MMR / 수두 / 대상포진 / 독감 생백신 (MMR / Varicella / Zoster / Live Influenza Vaccine)',
-    pregnancySafety: 'avoid',
-    pregnancyNote: '❌ 절대 금기. 태아 감염 우려가 있는 생체 바이러스 백신입니다. 접종 후 4주간 피임이 필수적입니다.',
-    lactationSafety: 'safe',
-    lactationNote: '수유 중에는 대체로 가능하나 전문가 상의.',
-    brands: '다양함',
-  },
+
 
   // --- 10. 호흡기 질환 - 감기 및 천식 (MFDS 2025) ---
   // [1차 권고 - 가장 안전함]
