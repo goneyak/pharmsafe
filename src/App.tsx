@@ -495,7 +495,7 @@ const MEDICATIONS: Medication[] = [
   {
     id: '5-1-1',
     category: '입덧',
-    name: '피리독신 (Pyridoxine, Vit B6) / 생강 (Ginger)',
+    name: '피리독신 (Vit B6) / 생강 Pyridoxine / Ginger',
     pregnancySafety: 'safe',
     pregnancyNote: '식이 및 보충제(초기 완화). 메스꺼움 감소에 효과적이며, 태아 발달 장애와 관련이 없는 것으로 확립된 안전한 성분입니다.',
     lactationSafety: 'safe',
@@ -725,7 +725,7 @@ const MEDICATIONS: Medication[] = [
   {
     id: '5-4',
     category: '변비',
-    name: '락툴로오스 / 락티톨 / 폴리에틸렌글리콜 (Lactulose / Lactitol / Polyethylene glycol, PEG)',
+    name: '락툴로오스 / 락티톨 / 폴리에틸렌글리콜 Lactulose / Lactitol / Polyethylene glycol, PEG',
     pregnancySafety: 'safe',
     pregnancyNote: '2차 치료제. 삼투성 완하제 성분들은 전신 흡수가 되지 않아 기형 위험이 없으며 장기 복용에도 비교적 안전합니다.',
     lactationSafety: 'safe',
@@ -737,7 +737,7 @@ const MEDICATIONS: Medication[] = [
     category: '변비',
     name: '수산화마그네슘 / 황산마그네슘 (Magnesium hydroxide / Magnesium sulfate)',
     pregnancySafety: 'caution',
-    pregnancyNote: '삼투성 완하제. 태반을 통과하며 전해질 이상 초래 가능성이 있어 1차 치료(팽창성) 실패 시 전문가 상담 후 단기 사용을 권장합니다.',
+    pregnancyNote: '삼투성 완하제인 마그네슘 제제는 태반을 통과하며 전해질 이상 초래 가능성이 있어 1차 치료(팽창성) 실패 시 전문가 상담 후 단기 사용을 권장합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유기 사용 안전.',
     brands: '마그밀 등',
