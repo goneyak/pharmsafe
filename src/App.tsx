@@ -2418,7 +2418,7 @@ const MEDICATIONS: Medication[] = [
     category: '면역/염증',
     name: 'TNF-α 억제제 (Infliximab / Adalimumab / Etanercept / Golimumab)',
     pregnancySafety: 'caution',
-    pregnancyNote: '에타너셉트, 인플릭시맙, 아달리무맙, 골리무맙 성분의 생물학적 제제입니다. 태반을 통과하므로 출생 후 신생아는 6개월간 생백신 투여를 금지합니다.',
+    pregnancyNote: '중증 건선으로 기존 치료에 반응하지 않는 등 제한된 경우에 한하여 임신 제 2삼분기 이후 최소 용량으로 신중히 투여하는 것이 권장됩니다. 임신 제2,3삼분기부터 태반 전달이 증가되므로 출생 후 신생아는 6개월간 생백신 투여를 금지합니다.',
     lactationSafety: 'caution',
     lactationNote: '수유 중 전문가 상담.',
     brands: '레미케이드, 휴미라, 엔브렐, 심포니',
