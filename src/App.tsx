@@ -1863,7 +1863,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '1세대 항히스타민제. 오랜 기간 사용된 안전한 성분. 다만 졸음 및 진정 작용에 주의하십시오. 1회 2~6mg 1일 2~4회 투여하며, 하루 24mg을 초과하지 않아야 합니다.',
     lactationSafety: 'caution',
     lactationNote: '과량 사용 시 유량 감소 가능성.',
-    brands: '코리투살 등',
   },
   {
     id: '10-2-nasal',
@@ -1873,7 +1872,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '안전성 데이터가 풍부하고 전신 흡수가 낮아 선호되는 비강 스프레이 국소 제제입니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 사용 가능.',
-    brands: '풀미코트, 옴나리스 등',
   },
   {
     id: '10-3-nasal',
@@ -1883,7 +1881,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '전신 흡수가 낮아 안전한 편입니다. 비강 스프레이 형태로 안전하게 사용 가능합니다.',
     lactationSafety: 'safe',
     lactationNote: '수유 중 안전.',
-    brands: '나조넥스, 아바미스 등',
   },
   {
     id: '10-9-nasal',
@@ -1893,7 +1890,6 @@ const MEDICATIONS: Medication[] = [
     pregnancyNote: '비강 국소 사용 시 전신 흡수가 적어 안전합니다. 권장량 준수가 중요합니다.',
     lactationSafety: 'caution',
     lactationNote: '수유 중 전문가 상담 필요.',
-    brands: '아젭틴 등',
   },
 
   // [신중 투여 - 상담 필수]
