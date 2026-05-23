@@ -495,7 +495,7 @@ const MEDICATIONS: Medication[] = [
   {
     id: '5-1-1',
     category: '입덧',
-    name: '피리독신 (Vit B6) / 생강 Pyridoxine / Ginger',
+    name: '피리독신 (Vit B6) / 생강 (Pyridoxine / Ginger)',
     pregnancySafety: 'safe',
     pregnancyNote: '식이 및 보충제(초기 완화). 메스꺼움 감소에 효과적이며, 태아 발달 장애와 관련이 없는 것으로 확립된 안전한 성분입니다.',
     lactationSafety: 'safe',
