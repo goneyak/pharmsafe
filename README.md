@@ -75,20 +75,51 @@ Open `http://localhost:3000`.
 
 ```text
 pharmsafe/
+├── .github/workflows/ # CI - typecheck, data validation, build
 ├── docs/              # screenshots and visual assets
 ├── references/        # source-reference notes
-├── scripts/           # data-cleaning and transformation scripts
-├── src/               # app source
+├── scripts/
+│   ├── validate-data.ts   # data integrity check (npm test)
+│   └── ...                # one-off data transformation scripts
+├── src/
+│   ├── data/
+│   │   ├── medications.ts             # 의약품 데이터 정본
+│   │   ├── medications.lactation.ts   # 수유부 초안 - 앱에서 import 하지 않는다
+│   │   └── categories.ts              # 카테고리 분류 체계
+│   └── App.tsx        # UI
 ├── LICENSE
 ├── package.json
 └── README.md
 ```
 
+## Data Integrity
+
+`npm test` (`scripts/validate-data.ts`) runs in CI and fails the build on:
+
+- duplicate record ids
+- missing required fields
+- invalid safety enum values
+- records whose category is unreachable from the UI
+- the same ingredient carrying different safety labels without `indication` / `formulation` / `doseNote` to distinguish them
+- `App.tsx` importing the unreleased lactation draft
+
+It also reports source-citation coverage on every run.
+
 ## Known Limitations
 
-- The current UI is still driven from a single large app file and should be modularized further
-- Record-level citations, page markers, and update timestamps are not yet attached to each medication card
-- Lactation content is not yet released as a validated public lookup flow
+- **Source citations cover 64/236 records (27%).** Records without a `source` field render an explicit
+  "원문 출처 미확인" warning on the card. 9 records reference ingredients that do not appear anywhere in
+  the cited MFDS document at all and need to be re-sourced or removed.
+- **Safety labels have not been reconciled with the MFDS 국내 허가사항 field.** A cross-check found 46 of
+  132 comparable records where the app label differs from the permit label - most often because the source
+  splits its judgement by formulation or dose (e.g. cetirizine tablet vs oral solution, pyridoxine 50mg vs
+  300mg) while the record carries a single label. The `formulation`, `doseNote`, and `permitLabel` fields
+  exist for this but are not yet populated.
+- **`permitLabel` and `pregnancySafety` are deliberately separate.** Some drugs are contraindicated on the
+  Korean permit label yet recommended first-line clinically (e.g. nifedipine in pregnancy hypertension).
+  Pharmacists need to know when a recommendation is off-label; collapsing the two loses that.
+- Lactation content is not yet released. Its draft data lives in `src/data/medications.lactation.ts` and is
+  **not imported by the app**, so it is not shipped in the client bundle.
 
 ## License
 

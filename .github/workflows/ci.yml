@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      # 타입 검사. brands 누락 41건은 여기서 잡혔어야 했다
+      - run: npm run lint
+      # 데이터 무결성. id 중복·필수 필드·카테고리 도달성·동일 성분 라벨 충돌
+      - run: npm test
+      - run: npm run build
